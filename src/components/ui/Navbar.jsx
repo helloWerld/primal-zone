@@ -8,6 +8,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
+      console.log("Scroll position", window.scrollY);
       setIsScrolled(window.scrollY > 50); // Change background after 50px scroll
     };
 
@@ -45,8 +46,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex flex-row items-center justify-between max-w-7xl mx-auto p-4 rounded-lg sticky top-2 ${
-        isScrolled ? "bg-neutral-900" : "bg-transparent"
+      className={`flex flex-row items-center justify-between max-w-7xl ml-2 p-4 rounded-lg fixed w-[98%] top-2 translate-x-[50%] right-1/2 z-20 ${
+        isScrolled ? "bg-neutral-900/90" : "bg-transparent"
       }`}
     >
       <Link href="/">
@@ -72,7 +73,7 @@ const Navbar = () => {
       </div>
       <div className="flex flex-row gap-3">
         <button className="btn btn-outline">Patient Portal</button>
-        <button className="btn btn-primary">Get Started</button>
+        <button className="btn btn-primary gradient-btn ">Get Started</button>
       </div>
     </nav>
   );

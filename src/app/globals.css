@@ -6,8 +6,6 @@
   @apply min-h-[600px];
 }
 
-/* .one-column {
+.gradient-btn {
+  @apply bg-gradient-to-br from-violet-700 to-pink-700 border-none text-white;
 }
-
-.two-column {
-} */
