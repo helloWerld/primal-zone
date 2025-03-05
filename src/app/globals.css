@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .page-section {
-  @apply min-h-[600px];
+  @apply min-h-[800px] flex items-center justify-center max-w-screen-2xl mx-auto;
 }
 
 .gradient-btn {
@@ -11,7 +11,7 @@
 }
 
 .gradient-border {
-  @apply relative  bg-black overflow-hidden z-10 rounded-lg;
+  @apply relative bg-black overflow-hidden z-10 rounded-lg;
 }
 
 .gradient-border::before {

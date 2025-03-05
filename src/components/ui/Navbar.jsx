@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      console.log("Scroll position", window.scrollY);
+      // console.log("Scroll position", window.scrollY);
       setIsScrolled(window.scrollY > 50); // Change background after 50px scroll
     };
 

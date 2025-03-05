@@ -12,9 +12,9 @@ const HeroCard = () => {
         you back in your prime.
       </p>
       <input
-        className="input input-bordered w-full bg-black/40"
+        className="input input-bordered w-full bg-black/40 font-extralight"
         type="email"
-        placeholder="you@gmail.com"
+        placeholder="example@gmail.com"
       />
       <button className="btn btn-primary w-full gradient-btn -mt-2">
         SIGN UP

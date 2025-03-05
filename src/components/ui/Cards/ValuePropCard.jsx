@@ -16,11 +16,11 @@ const ValuePropCard = ({ id, icon, title, description }) => {
   };
   return (
     <div
-      className={`rounded-lg w-72 max-h-54 flex flex-col items-start justify-between gradient-border hover:z-[100] ${
-        id >= 2 && "mt-12"
+      className={` rounded-lg w-full sm:w-72 max-h-54 flex flex-col items-start justify-between gradient-border hover:z-[100] ${
+        id <= 1 && "sm:-mt-12"
       }`}
     >
-      <div className="z-10 bg-gradient-to-r from-transparent to-pink-500/10 p-6">
+      <div className="w-full z-10 bg-gradient-to-r from-transparent to-pink-500/10 p-6">
         {getIcon()}
         <h3 className="text-2xl text-white font-semibold mt-4">{title}</h3>
         <p className="text-lg mt-1">{description}</p>

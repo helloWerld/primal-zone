@@ -10,7 +10,7 @@ const SectionTitle = ({
   buttonLink,
 }) => {
   return (
-    <div className={`flex flex-col items-${align} ms-12 w-4/5`}>
+    <div className={`flex flex-col items-${align} w-4/5`}>
       <Subheadline sub={subheadline} />
       <h2 className="text-5xl text-white mt-4">{headline}</h2>
       {description && (
