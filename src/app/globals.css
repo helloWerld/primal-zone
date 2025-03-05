@@ -9,3 +9,17 @@
 .gradient-btn {
   @apply bg-gradient-to-br from-violet-700 to-pink-700 border-none text-white;
 }
+
+.gradient-border {
+  @apply relative bg-black overflow-hidden z-10 rounded-lg;
+}
+
+.gradient-border::before {
+  content: "";
+  @apply absolute -top-px -left-px -right-px -bottom-px bg-gradient-to-br from-pink-500 to-purple-500 z-0 rounded-lg opacity-60;
+}
+
+.gradient-border::after {
+  content: "";
+  @apply absolute top-px left-px right-px bottom-px bg-black z-0 rounded-lg;
+}
