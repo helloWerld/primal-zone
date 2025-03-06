@@ -3,8 +3,36 @@ import SectionTitle from "../ui/SectionTitle";
 import ProcessCard from "../ui/Cards/ProcessCard";
 
 const TreatmentProcess = () => {
+  const steps = [
+    {
+      id: 1,
+      headline: "Information",
+      details: [
+        "Provide Contact Details",
+        "Complete Health Survey",
+        "Upload ID & Bloodwork",
+        "Pay Consulting Fee",
+      ],
+    },
+    {
+      id: 2,
+      headline: "Evaluation",
+      details: [
+        "Data Analysis",
+        "Patient Diagnosis",
+        "Medicine Protocol",
+        "Speak with Doctor",
+      ],
+    },
+    {
+      id: 3,
+      headline: "Medication",
+      details: ["Pay for Medicine", "Receive Medication", "Take First Dose"],
+    },
+  ];
+
   return (
-    <div className="page-section flex-col gap-8">
+    <div id="how-it-works" className="page-section flex-col gap-8">
       <SectionTitle
         align={"center"}
         subheadline={"How It Works"}
@@ -16,9 +44,9 @@ const TreatmentProcess = () => {
         buttonLink={""}
       />
       <div className="flex flex-col lg:flex-row gap-4 items-center justify-center">
-        <ProcessCard />
-        <ProcessCard />
-        <ProcessCard />
+        {steps.map((step) => (
+          <ProcessCard key={step.id} step={step} />
+        ))}
       </div>
     </div>
   );

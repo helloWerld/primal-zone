@@ -1,18 +1,21 @@
 import React from "react";
 
-const ProcessCard = () => {
+const ProcessCard = ({ step }) => {
   return (
-    <div className="flex gradient-border p-4">
-      <div className="flex flex-col gap-4 items-center justify-center z-10 p-6">
+    <div className="flex gradient-border w-72 justify-center">
+      <div className="flex flex-col justify-start gap-4 items-center z-10 p-12 h-[350px]">
         <div className="flex items-center justify-center size-24 rounded-full gradient-btn text-5xl font-bold mx-auto">
-          1
+          {step?.id}
         </div>
-        <h2 className="text-3xl text-pink-600 font-semibold">Information</h2>
-        <ul className="text-sm">
-          <li>Provide Contact Details</li>
-          <li>Complete Health Survey</li>
-          <li>Upload ID & Bloodwork</li>
-          <li>Pay Consulting Fee</li>
+        <h2 className="text-3xl text-pink-600 font-semibold">
+          {step?.headline}
+        </h2>
+        <ul className="text-center">
+          {step?.details?.map((detail) => (
+            <li key={detail} className=" font-light">
+              {detail}
+            </li>
+          ))}
         </ul>
       </div>
     </div>

@@ -5,5 +5,13 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        "main-body": "url('@/../public/body_bg.png')",
+        "login-body": "url('@/../public/login_bg.png')",
+      },
+    },
+  },
   plugins: [require("daisyui")],
 };

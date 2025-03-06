@@ -1,10 +1,11 @@
 import React from "react";
 import SectionTitle from "../ui/SectionTitle";
+import FAQList from "../ui/FAQList";
 
 const FAQs = () => {
   return (
-    <div className="page-section">
-      <div>
+    <div id="faq" className="page-section">
+      <div className="w-1/2">
         <SectionTitle
           align={"start"}
           subheadline={"Educate yourself"}
@@ -16,7 +17,9 @@ const FAQs = () => {
           buttonLink={""}
         />
       </div>
-      <div>Right Section</div>
+      <div className="w-1/2">
+        <FAQList />
+      </div>
     </div>
   );
 };

@@ -1,10 +1,35 @@
 import React from "react";
 import SectionTitle from "../ui/SectionTitle";
 import TreatmentCard from "../ui/Cards/TreatmentCard";
+import { Bed, Mars } from "lucide-react";
 
 const OurTreatments = () => {
+  const treatments = [
+    {
+      id: 0,
+      icon: <Mars size={40} />,
+      headline: "Men's Hormone Health",
+      price: 299,
+      subheadline: "Male Androgen Health (TRT) Consultation",
+      included: ["Bloods Analysis", "Doctor Consultation", "Medicine Protocol"],
+      medsNotIncluded: true,
+    },
+    {
+      id: 1,
+      icon: <Bed size={40} />,
+      headline: "Men's Fertility Health",
+      price: 180,
+      subheadline: "Male Fertility Consultation",
+      included: [
+        "Bloods & Semen Analysis",
+        "Doctor Consultation",
+        "Medicine Protocol",
+      ],
+      medsNotIncluded: true,
+    },
+  ];
   return (
-    <div className="page-section flex flex-col items-center">
+    <div id="treatments" className="page-section flex flex-col items-center">
       <SectionTitle
         align={"center"}
         subheadline={"Transparent & Upfront"}
@@ -14,8 +39,9 @@ const OurTreatments = () => {
         }
       />
       <div className="flex flex-row items-center gap-6 p-12">
-        <TreatmentCard />
-        <TreatmentCard />
+        {treatments.map((treatment) => (
+          <TreatmentCard key={treatment?.id} treatment={treatment} />
+        ))}
       </div>
     </div>
   );

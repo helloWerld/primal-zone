@@ -14,16 +14,18 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <NotFeelingYourself />
-      <OurTreatments />
-      <GotBlood />
-      <TreatmentProcess />
-      <TalkToUs />
-      <HealthJourneys />
-      <OurValues />
-      <FAQs />
-      <CustomerReviews />
-      <SocialMedia />
+      <div className="bg-main-body bg-cover">
+        <NotFeelingYourself />
+        <OurTreatments />
+        <GotBlood />
+        <TreatmentProcess />
+        <TalkToUs />
+        <HealthJourneys />
+        <OurValues />
+        <FAQs />
+        <CustomerReviews />
+        <SocialMedia />
+      </div>
     </main>
   );
 }

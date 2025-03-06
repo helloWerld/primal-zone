@@ -72,8 +72,15 @@ const Navbar = () => {
         ))}
       </div>
       <div className="flex flex-row gap-3">
-        <button className="btn btn-outline">Patient Portal</button>
-        <button className="btn btn-primary gradient-btn ">Get Started</button>
+        <Link href="/login" className="btn btn-outline">
+          Patient Portal
+        </Link>
+        <button
+          onClick={() => document.getElementById("sign_up_modal").showModal()}
+          className="btn btn-primary gradient-btn "
+        >
+          Get Started
+        </button>
       </div>
     </nav>
   );

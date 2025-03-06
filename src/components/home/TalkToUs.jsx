@@ -5,7 +5,7 @@ import CalendlyWidget from "../ui/CalendlyWidget";
 
 const TalkToUs = () => {
   return (
-    <div className="page-section flex flex-col min-h-[800px]">
+    <div id="talk-to-us" className="page-section flex flex-col min-h-[800px]">
       <SectionTitle
         align={"center"}
         subheadline={"Need A Helping Hand?"}
@@ -14,7 +14,8 @@ const TalkToUs = () => {
         buttonText={""}
         buttonLink={""}
       />
-      <CalendlyWidget />
+      <img src={calendar.src} className="mt-12" />
+      {/* <CalendlyWidget /> */}
     </div>
   );
 };

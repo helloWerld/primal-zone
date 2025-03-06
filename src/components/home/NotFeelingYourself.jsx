@@ -42,7 +42,7 @@ const NotFeelingYourself = () => {
           />
         ))}
       </div>
-      <div className="flex items-center justify-start lg:w-1/2">
+      <div className="flex items-center justify-center lg:w-1/2">
         <SectionTitle
           align={""}
           subheadline={"Listen To Your Instincts"}

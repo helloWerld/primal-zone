@@ -1,11 +1,12 @@
+"use client";
+
 import React from "react";
 import SectionTitle from "../ui/SectionTitle";
 import JourneyCard from "../ui/Cards/JourneyCard";
-import Link from "next/link";
 
 const HealthJourneys = () => {
   return (
-    <div className="page-section flex- flex-col">
+    <div id="journeys" className="page-section flex- flex-col">
       <SectionTitle
         align={"center"}
         subheadline={"Get Inspired, Get Started"}
@@ -21,12 +22,12 @@ const HealthJourneys = () => {
         <JourneyCard />
         <JourneyCard />
       </div>
-      <Link
-        href="#"
+      <button
+        onClick={() => document.getElementById("sign_up_modal").showModal()}
         className="btn btn-lg w-[500px] gradient-btn mt-12 text-lg font-light"
       >
         Start Treatment
-      </Link>
+      </button>
     </div>
   );
 };
