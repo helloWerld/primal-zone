@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="bg-black min-h-screen w-full relative">
+    <html lang="en" className="scroll-smooth overflow-x-hidden">
+      <body className="bg-black min-h-screen w-full relative overflow-x-clip">
         <Navbar />
         {children}
         <Footer />

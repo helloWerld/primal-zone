@@ -11,7 +11,8 @@ const Hero = () => {
         muted={true}
         loop={true}
         playsInline={true}
-        className="min-w-full bg-cover min-h-max"
+        height="600"
+        className="w-full h-full object-cover min-h-[600px]"
       >
         <source
           src="https://pzpublic.s3.ap-southeast-2.amazonaws.com/Website+video+Nov.mp4"

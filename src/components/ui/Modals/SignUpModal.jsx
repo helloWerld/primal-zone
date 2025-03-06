@@ -4,11 +4,14 @@ import React from "react";
 
 const SignUpModal = () => {
   return (
-    <dialog id="sign_up_modal" className="modal backdrop-blur-lg w-full">
+    <dialog
+      id="sign_up_modal"
+      className="modal modal-bottom sm:modal-middle backdrop-blur-lg w-full"
+    >
       <div className="modal-box bg-black border border-white/20 flex flex-col gap-4 ">
         <form method="dialog">
           {/* if there is a button in form, it will close the modal */}
-          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+          <button className="btn btn-sm btn-circle btn-ghost absolute right-4 top-4">
             ✕
           </button>
         </form>

@@ -30,7 +30,7 @@ const NotFeelingYourself = () => {
     },
   ];
   return (
-    <div className="page-section flex-col lg:flex-row flex ">
+    <div className="page-section flex-col-reverse lg:flex-row flex ">
       <div className="max-h-fit lg:w-1/2 grid grid-flow-col grid-cols-1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-2 gap-6 items-center p-6">
         {cards.map((card) => (
           <ValuePropCard

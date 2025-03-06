@@ -1,18 +1,22 @@
 import React from "react";
 import SectionTitle from "../ui/SectionTitle";
 import facebook from "../../../public/facebook.webp";
+import instagram from "../../../public/instagram.webp";
+import linkedin from "../../../public/linkedin.webp";
+import youtube from "../../../public/youtube.webp";
+import Link from "next/link";
 
 const SocialMedia = () => {
   const socials = [
     {
       id: 0,
-      icon: facebook,
-      link: "https://www.facebook.com",
+      icon: instagram,
+      link: "https://www.instagram.com",
     },
     {
       id: 1,
-      icon: facebook,
-      link: "https://www.facebook.com",
+      icon: linkedin,
+      link: "https://www.linkedin.com",
     },
     {
       id: 2,
@@ -21,8 +25,8 @@ const SocialMedia = () => {
     },
     {
       id: 3,
-      icon: facebook,
-      link: "https://www.facebook.com",
+      icon: youtube,
+      link: "https://www.youtube.com",
     },
   ];
 
@@ -38,14 +42,16 @@ const SocialMedia = () => {
         buttonText={""}
         buttonLink={""}
       />
-      <div className="flex items-center gap-4 mt-12">
+      <div className="flex flex-row flex-wrap items-center justify-center gap-4 mt-12">
         {socials.map((social) => (
-          <div
-            className="flex flex-row items-center justify-center size-20 gradient-btn rounded-full"
+          <Link
+            href={social.link}
+            target="_blank"
+            className="flex items-center justify-center size-20 gradient-btn rounded-full"
             key={social.id}
           >
             <img src={social.icon.src} className="size-6" />
-          </div>
+          </Link>
         ))}
       </div>
     </div>

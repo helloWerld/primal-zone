@@ -1,4 +1,4 @@
-import { BadgeCheck, Mars } from "lucide-react";
+import { ArrowRight, BadgeCheck, Mars } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -9,7 +9,7 @@ const TreatmentCard = ({ treatment }) => {
         treatment?.id === 0
           ? "gradient-border"
           : "border rounded-lg border-white/50"
-      } w-96 min-h-[530px] text-white`}
+      } w-80 min-h-[530px] text-white`}
     >
       <div className="flex flex-col justify-between gap-4 z-10 p-6 w-full">
         <div className="flex items-center justify-center size-16 border border-gray-600/50 rounded-lg">
@@ -75,7 +75,9 @@ const TreatmentCard = ({ treatment }) => {
           } !text-white min-h-12`}
           href="#"
         >
-          <div className="z-10 ">Get Started</div>
+          <div className="flex items-center gap-2 z-10 ">
+            Get Started <ArrowRight />
+          </div>
         </Link>
       </div>
     </div>

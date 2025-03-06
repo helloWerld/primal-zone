@@ -4,8 +4,8 @@ import FAQList from "../ui/FAQList";
 
 const FAQs = () => {
   return (
-    <div id="faq" className="page-section">
-      <div className="w-1/2">
+    <div id="faq" className="page-section flex flex-col lg:flex-row gap-6">
+      <div className="flex items-center justify-center w-full lg:w-1/2">
         <SectionTitle
           align={"start"}
           subheadline={"Educate yourself"}
@@ -17,7 +17,7 @@ const FAQs = () => {
           buttonLink={""}
         />
       </div>
-      <div className="w-1/2">
+      <div className="w-full lg:w-1/2">
         <FAQList />
       </div>
     </div>

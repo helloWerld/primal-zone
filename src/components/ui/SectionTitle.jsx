@@ -12,7 +12,7 @@ const SectionTitle = ({
   return (
     <div className={`flex flex-col items-${align} w-4/5`}>
       <Subheadline sub={subheadline} />
-      <h2 className="text-5xl text-white mt-4">{headline}</h2>
+      <h2 className={`text-5xl text-white mt-4 text-${align}`}>{headline}</h2>
       {description && (
         <p className={`text-${align} font-thin text-lg mt-8`}>{description}</p>
       )}

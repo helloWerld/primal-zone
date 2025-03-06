@@ -12,44 +12,44 @@ const FAQList = () => {
       id: 1,
       question: "What are the benefits of testosterone therapy?",
       answer:
-        "Testosterone is a hormone that plays a key role in male physical features and development, including muscle mass, bone density, and sex drive.",
+        "Testosterone therapy can help increase energy levels, improve libido, enhance mood, and boost muscle mass and strength.",
     },
     {
       id: 2,
       question: "Who should consider testosterone therapy?",
       answer:
-        "Testosterone is a hormone that plays a key role in male physical features and development, including muscle mass, bone density, and sex drive.",
+        "Men experiencing symptoms of low testosterone, such as fatigue, depression, and decreased libido, may benefit from testosterone therapy.",
     },
     {
       id: 3,
       question: "What are the risks of testosterone therapy?",
       answer:
-        "Testosterone is a hormone that plays a key role in male physical features and development, including muscle mass, bone density, and sex drive.",
+        "Potential risks include cardiovascular issues, prostate health concerns, and hormone imbalances.",
     },
     {
       id: 4,
       question: "How is testosterone therapy administered?",
       answer:
-        "Testosterone is a hormone that plays a key role in male physical features and development, including muscle mass, bone density, and sex drive.",
+        "Testosterone therapy can be administered through injections, gels, patches, or pellets.",
     },
     {
       id: 5,
       question:
         "How long does it take to see results from testosterone therapy?",
       answer:
-        "Testosterone is a hormone that plays a key role in male physical features and development, including muscle mass, bone density, and sex drive.",
+        "Results may vary, but most men notice improvements within a few weeks to months of starting therapy.",
     },
     {
       id: 6,
       question: "Can women benefit from testosterone therapy?",
       answer:
-        "Testosterone is a hormone that plays a key role in male physical features and development, including muscle mass, bone density, and sex drive.",
+        "Yes, women can also experience low testosterone levels and may benefit from testosterone therapy to improve libido, energy, and overall well-being.",
     },
     {
       id: 7,
       question: "Is testosterone therapy right for me?",
       answer:
-        "Testosterone is a hormone that plays a key role in male physical features and development, including muscle mass, bone density, and sex drive.",
+        "Consult our healthcare professionals to determine if testosterone therapy is the right treatment option for you based on your symptoms, blood work and medical history.",
     },
   ];
   return (

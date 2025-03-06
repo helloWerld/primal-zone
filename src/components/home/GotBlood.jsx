@@ -25,8 +25,8 @@ const GotBlood = () => {
     },
   ];
   return (
-    <div className="page-section  px-4">
-      <div className="w-1/2 flex items-center justify-center">
+    <div className="page-section flex flex-col lg:flex-row px-4 gap-6 lg:gap-0">
+      <div className="w-full lg:w-1/2 flex items-center justify-center">
         <SectionTitle
           align={"start"}
           subheadline={"The River Of Life"}
@@ -38,7 +38,7 @@ const GotBlood = () => {
           buttonLink={""}
         />
       </div>
-      <div className="w-1/2 flex gap-4">
+      <div className="w-full lg:w-1/2 flex flex-col md:flex-row items-center justify-center gap-4">
         {treatments.map((treatment) => (
           <TreatmentCard key={treatment?.id} treatment={treatment} />
         ))}

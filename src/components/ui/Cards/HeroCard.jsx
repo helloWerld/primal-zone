@@ -4,7 +4,7 @@ import React from "react";
 
 const HeroCard = () => {
   return (
-    <div className="absolute top-[50%] -translate-y-[50%] 2xl:left-[15%] left-[10%] bg-neutral-900/90 h-96 w-96 p-6 rounded-lg flex flex-col gap-3 items-center justify-between">
+    <div className="absolute top-[50%] -translate-y-[50%] 2xl:left-[15%] sm:left-[10%] bg-neutral-900/90 h-96 w-11/12 sm:w-96 p-6 rounded-lg flex flex-col gap-3 items-center justify-between">
       <h1 className="text-4xl text-white text-center font-semibold">
         Men's Hormone
         <br />& Holistic Health

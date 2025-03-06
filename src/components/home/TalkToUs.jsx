@@ -14,7 +14,7 @@ const TalkToUs = () => {
         buttonText={""}
         buttonLink={""}
       />
-      <img src={calendar.src} className="mt-12" />
+      <img src={calendar.src} className="mt-12 w-[400px]" />
       {/* <CalendlyWidget /> */}
     </div>
   );

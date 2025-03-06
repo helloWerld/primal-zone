@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "../ui/SectionTitle";
 import TreatmentCard from "../ui/Cards/TreatmentCard";
-import { Bed, Mars } from "lucide-react";
+import { Mars, TestTubeDiagonal } from "lucide-react";
 
 const OurTreatments = () => {
   const treatments = [
@@ -16,7 +16,7 @@ const OurTreatments = () => {
     },
     {
       id: 1,
-      icon: <Bed size={40} />,
+      icon: <TestTubeDiagonal size={40} />,
       headline: "Men's Fertility Health",
       price: 180,
       subheadline: "Male Fertility Consultation",
@@ -38,7 +38,7 @@ const OurTreatments = () => {
           "Our treatments are designed to hyper target individual Health needs. We’ll provide a FULL REFUND if you are NOT ELIGIBLE for treatment."
         }
       />
-      <div className="flex flex-row items-center gap-6 p-12">
+      <div className="flex flex-col md:flex-row items-center gap-6 p-12">
         {treatments.map((treatment) => (
           <TreatmentCard key={treatment?.id} treatment={treatment} />
         ))}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import logo from "../../../public/footer_logo.webp";
+import { Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,15 +12,22 @@ const Footer = () => {
           <p>60 Martin Place, Sydney NSW 2000 Australia</p>
         </div>
         <div className="flex flex-col gap-4  justify-end">
-          <h3 className="text-center text-3xl font-semibold text-white">
-            Are you interested in <br />
-            working with Primal Zone?
+          <h3 className="text-center lg:text-start  text-3xl font-semibold text-white">
+            Are you{" "}
+            <span
+              className="
+            text-pink-500"
+            >
+              interested
+            </span>{" "}
+            in <br />
+            working with Primal Zone ?
           </h3>
           <Link
-            className="gradient-btn btn btn-lg font-light"
+            className="gradient-btn btn btn-lg font-light mt-4"
             href="mailto:ignite@primalzone.com.au"
           >
-            ignite@primalzone.com.au
+            <Mail /> ignite@primalzone.com.au
           </Link>
         </div>
       </div>
