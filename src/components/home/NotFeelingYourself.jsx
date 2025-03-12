@@ -31,8 +31,8 @@ const NotFeelingYourself = () => {
   ];
 
   return (
-    <div className="page-section flex flex-row">
-      <div className="w-1/2 grid grid-flow-col grid-cols-2 grid-rows-2 items-start p-8">
+    <div className="page-section flex lg:flex-row flex-col-reverse">
+      <div className="max-h-fit lg:w-1/2 grid grid-flow-col grid-cols-1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-2 items-center gap-6 p-6">
         {cards.map((card) => (
           <ValuePropCard
             key={card.id}
@@ -43,9 +43,9 @@ const NotFeelingYourself = () => {
           />
         ))}
       </div>
-      <div className="w-1/2 flex items-center justify-start">
+      <div className="lg:w-1/2 flex items-center justify-center">
         <SectionTitle
-          align={"start"}
+          align={""}
           subheadline={"Listen To Your Instincts"}
           headline={"Not Feeling Yourself?"}
           description={

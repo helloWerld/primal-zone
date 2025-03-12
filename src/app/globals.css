@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .page-section {
-  @apply min-h-[600px];
+  @apply min-h-[800px] flex items-center justify-center max-w-screen-2xl mx-auto px-4 py-12;
 }
 
 .gradient-btn {

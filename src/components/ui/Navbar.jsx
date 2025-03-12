@@ -1,14 +1,16 @@
 "use client";
 
+import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      console.log("Scroll position", window.scrollY);
+      // console.log("Scroll position", window.scrollY);
       setIsScrolled(window.scrollY > 50); // Change background after 50px scroll
     };
 
@@ -60,7 +62,7 @@ const Navbar = () => {
           height={50}
         />
       </Link>
-      <div className="flex flex-row gap-5">
+      <div className="hidden lg:flex flex-row gap-5">
         {navLinks.map((link) => (
           <Link
             href={`/${link.href}`}
@@ -71,12 +73,62 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-      <div className="flex flex-row gap-3">
-        <button className="btn btn-outline">Patient Portal</button>
-        <button className="btn btn-primary gradient-btn ">Get Started</button>
+      <div className="flex flex-row gap-3 items-center">
+        <button className="hidden sm:flex btn btn-outline">
+          Patient Portal
+        </button>
+        <button className="hidden sm:flex btn btn-primary gradient-btn ">
+          Get Started
+        </button>
+        <div className="flex lg:hidden relative">
+          <MenuIcon
+            size={30}
+            className="cursor-pointer"
+            onClick={() => setMenuOpen(!menuOpen)}
+          />
+          {menuOpen && <Menu />}
+        </div>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
+
+// MENU COMPONENT
+
+const Menu = () => {
+  return (
+    <div className="p-4 w-64 rounded-lg  absolute top-12 right-0 flex flex-col gap-4 bg-black/90 backdrop-blur-lg border border-white/30">
+      <ul className="flex flex-col gap-4 text-center">
+        <li>
+          <Link href="#treatments">Treatments</Link>
+        </li>
+        <li>
+          <Link href="#how-it-works">How It Works</Link>
+        </li>
+        <li>
+          <Link href="#talk-to-us">Talk To Us</Link>
+        </li>
+        <li>
+          <Link href="#journeys">Journey's</Link>
+        </li>
+        <li>
+          <Link href="#faq">FAQ</Link>
+        </li>
+      </ul>
+
+      <div className="flex flex-col gap-2 sm:hidden">
+        <Link href="/login" className="btn btn-outline">
+          Patient Portal
+        </Link>
+        <button
+          onClick={() => document.getElementById("sign_up_modal").showModal()}
+          className="btn gradient-btn"
+        >
+          Get Started
+        </button>
+      </div>
+    </div>
+  );
+};
