@@ -96,7 +96,6 @@ const Navbar = () => {
 export default Navbar;
 
 // MENU COMPONENT
-
 const Menu = () => {
   return (
     <div className="p-4 w-64 rounded-lg  absolute top-12 right-0 flex flex-col gap-4 bg-black/90 backdrop-blur-lg border border-white/30">
